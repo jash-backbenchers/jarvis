@@ -1,0 +1,43 @@
+<ion-view view-title="Profile">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/cover.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/profile.jpg');"></div>
+                <h3><a class="light">Jaswanth jash</a></h3>
+                <h4>Android developer at xda developers</h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app" class="tab-item">
+                <i class="icon ion-arrow-graph-up-right"></i> Activity
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-flash"></i> Controls
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-settings"></i> Settings
+            </a>
+        </div>
+        <h4 class="content padding double-padding-x">Recent activities</h4>
+        <div class="list animate-fade-slide-in-right">
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/bulb 1.png">
+                <h2>Living room bulb 1</h2>
+                <p>2 min ago</p>
+                <i class="icon ion-flash muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/fan 1.png">
+                <h2>Bedroom fan 1</h2>
+                <p>5 min ago</p>
+                <i class="icon ion-flash muted"></i>
+            </a>
+            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
+                <img src="img/bulb 2.png">
+                <h2>Studyroom light</h2>
+                <p>1hr ago</p>
+                <i class="icon ion-flash muted"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

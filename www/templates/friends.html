@@ -1,0 +1,26 @@
+<ion-view view-title="Controls">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+
+        <div class="content has-header">
+        <!--
+            <button ng-click="fbtest()" class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook test</button>
+        -->
+            <div ng-repeat="(room,x) in l1">
+                <ion-list class="list " >
+                    <list-item class="item"><h1 style="color: black;text-shadow: 0px 0px 0px black;font-size: 36px">{{room}}</h1></list-item>
+                    <list-item ng-repeat="y in x" class="item item-toggle item-avatar ">
+                        <img ng-src=img/{{y.name}}.png>
+                          <h2>{{y.Description}}</h2>
+                        <p>{{y.status}}</p>
+                        <label class="toggle toggle-assertive">
+                           <input type="checkbox" ng-true-value="1" ng-false-value="0" ng-model="y.status ">
+                           <div class="track">
+                             <div class="handle"></div>
+                           </div>
+                        </label>
+                    </list-item>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
